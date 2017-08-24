@@ -13,8 +13,8 @@ service:
     SPRING_DATASOURCE_URL: jdbc:mysql://${DatabaseEndpointAddress}:${DatabaseEndpointPort}/${DatabaseName}
   pipeline:
     source:
-      provider: GitHub
-      repo: cplee/banana-service
+      provider: CodeCommit
+      repo: banana-service
     build:
       image: aws/codebuild/java:openjdk-8
     acceptance:
