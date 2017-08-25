@@ -1,13 +1,11 @@
 service:
   name: banana-service
   port: 8080
-  pathPatterns:
-  - /bananas
+  hostPatterns:
+    - banana*
   database:
     name: banana
   environment:
-    SPRING_CLOUD_CONSUL_HOST: 172.17.0.1
-    SPRING_CLOUD_CONSUL_DISCOVERY_REGISTER: 'false'
     SPRING_DATASOURCE_USERNAME: ${DatabaseMasterUsername}
     SPRING_DATASOURCE_PASSWORD: ${DatabaseMasterPassword}
     SPRING_DATASOURCE_URL: jdbc:mysql://${DatabaseEndpointAddress}:${DatabaseEndpointPort}/${DatabaseName}
