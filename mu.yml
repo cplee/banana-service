@@ -1,6 +1,7 @@
 service:
   name: banana-service
   port: 8080
+  cpu: 200
   hostPatterns:
     - banana.*
   database:
