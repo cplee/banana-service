@@ -2,7 +2,7 @@ service:
   name: banana-service
   port: 8080
   hostPatterns:
-    - banana*
+    - banana.*
   database:
     name: banana
   environment:
