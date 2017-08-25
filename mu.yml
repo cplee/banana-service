@@ -5,6 +5,8 @@ service:
   memory: 512
   hostPatterns:
     - banana.*
+  pathPatterns:
+    - /bananas*
   database:
     name: banana
   environment:
