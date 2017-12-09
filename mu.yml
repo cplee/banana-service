@@ -2,7 +2,7 @@ service:
   name: banana-service
   port: 8080
   cpu: 512
-  memory: 512
+  memory: 1024
   hostPatterns:
     - banana.*
   pathPatterns:
