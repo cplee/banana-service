@@ -6,7 +6,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - npm install newman --global
+      - npm install newman@3.4.3 --global
   build:
     commands:
       - newman run -e env.json -r html,json,junit,cli src/test/postman/collection.json
