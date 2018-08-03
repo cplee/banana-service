@@ -3,3 +3,7 @@
 build/
 newman/
 env.json
+bin/
+.classpath
+.project
+.settings/
